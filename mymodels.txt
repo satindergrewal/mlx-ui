@@ -1,0 +1,4 @@
+mlx-community/laserxtral-4bit-mlx|🐬 Laserxtral - 4x7b
+mlx-community/Nous-Hermes-2-Mixtral-8x7B-DPO-4bit|🧙 Nous Hermes 2 Mixtral 8x7B DPO Q4 (medium)
+mlx-community/TinyDolphin-2.8-1.1b-4bit-mlx|🐬 TinyDolphin 1B Q4 (tiny)
+mlx-community/dolphin-2.6-mistral-7b-dpo-laser-4bit-mlx|🐬 Dolphin Mistral 7B DPO LASER Q4 (small)

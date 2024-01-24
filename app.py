@@ -9,7 +9,7 @@ title = "MLX Chat"
 ver = "0.7.12"
 debug = False
 
-with open('models.txt', 'r') as file:
+with open('mymodels.txt', 'r') as file:
     model_refs = [line.strip() for line in file.readlines() if not line.startswith('#')]
 
 model_refs = {k.strip(): v.strip() for k, v in [line.split("|") for line in model_refs]}
@@ -31,10 +31,10 @@ model_ref = st.sidebar.selectbox("model", model_refs.keys(), format_func=lambda 
 system_prompt = st.sidebar.text_area("system prompt", "You are a helpful AI assistant trained on a vast amount of "
                                                       "human knowledge. Answer as concisely as possible.")
 
-context_length = st.sidebar.number_input('context length', value=400, min_value=100, step=100, max_value=32000,
+context_length = st.sidebar.number_input('context length', value=16384, min_value=100, step=100, max_value=32000,
                                          help="how many maximum words to print, roughly")
 
-temperature = st.sidebar.slider('temperature', min_value=0., max_value=1., step=.10, value=.5,
+temperature = st.sidebar.slider('temperature', min_value=0., max_value=1., step=.10, value=1.0,
                                 help="lower means less creative but more accurate")
 
 st.sidebar.markdown("---")
